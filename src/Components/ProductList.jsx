@@ -30,7 +30,7 @@ const ProductList = () => {
                 <span>{product.name} - ${product.price}</span>
                 {/*Button is disabled if product is in disabled products */}
                 <button className={`add-to-cart-btn ${disabledProducts.includes(product.id) ? 'disabled' : ''}`}
-                onClick={() => handleAddtoCart(product)} disabled={disabledProducts.includes(product.id)}>
+                onClick={() => handleAddToCart(product)} disabled={disabledProducts.includes(product.id)}>
                     Add to Cart
                 </button>
             </li>
