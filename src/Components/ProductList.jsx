@@ -13,7 +13,15 @@ const ProductList = () => {
     <div className="product-list">
       <h2 className="product-list-title">Products</h2>
       <ul className="product-list-items">
-     
+        {/*Implement ProductList componenet  */}
+        {products.map(product => (
+            <li key={product.id} className="product-list-item">
+                <span>{product.name} - ${product.price}</span>
+                <button>
+                    Add to Cart
+                </button>
+            </li>
+        ))}
       </ul>
     </div>
   );
